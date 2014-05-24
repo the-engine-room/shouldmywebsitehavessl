@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Should my site have ssl?</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/jquery.windows.js"></script>
+        <script src="js/behavior.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    <body>
+
+        <!-- NOTE: each "window" is a section element with class .window -->
+
+        <section id="0" class="window">
+            <div class="content">
+                    <div class="title-container">
+                    	<h1 class="question">Should my site have SSL?</h1><h1 class="answer">YES.</h1> 
+                    </div>
+					<h2 class="url-checker"><input class="input" type="text" placeholder="insert URL here..."/><a class="actiontaker" href="#">check</a></h2>
+					<h2 class="find-out">To find out why, scroll down.</h2>
+					
+            </div>
+        </section>
+
+        <section id="1" class="window">
+            <div class="content">
+                <h2>SSL secures the traffic to and from your website.</h2>
+					<div class="explanation">Your words are valuable, and so are those of your visitors. If they read your stuff, or they leave a message on your website, it is traffic between you and them. No one in between should be able to read along.
+<br><a class="readmore" href="https://www.eff.org/pages/tor-and-https">Read more</a>
+
+               	 </div>
+            </div>
+        </section>
+
+        <section id="2" class="window">
+            <div class="content">
+                <h2>SSL protects your visitors.</h2>
+                <div class="explanation">People have a wild variety of reasons for visiting your website. Some information might get them in trouble in their jurisdiction without you even knowing it. SSL makes sure no one 'on the line' knows what they have been reading or writing. 
+<br><a class="readmore" href="https://www.eff.org/pages/tor-and-https">Read more</a> 
+                </div>
+            </div>
+        </section>
+
+        <section id="3" class="window">
+            <div class="content">
+                <h2>Visitors can be confident that they are at the right website.</h2>
+                <div class="explanation">SSL provides verification. That way visitors know they are listening and talking to you and not an evil impostor. <br>
+<br><a class="readmore" href="https://www.eff.org/pages/tor-and-https">Read more</a> 
+                </div>
+            </div>
+        </section>
+
+        <section id="4" class="window">
+            <div class="content">
+                <h2>Encryption raises the costs for governments and companies engaging in dragnet surveillance.</h2>
+                <div class="explanation">Currently the NSA & co. are spying upon us all. Only encryption helps at this moment. The more encryption there is, the harder it is to engage in dragnet surveillance. SSL raises these cost significantly. 
+                <a class="readmore" href="https://www.eff.org/pages/tor-and-https">Read more</a>
+                </div>
+            </div>        
+        </section>
+
+        <section id="5" class="window">
+          <div class="content">
+                <h2>Your websites gains credibility because you show you are taking your visitors' safety seriously.</h2>
+                <div class="explanation">You spend time to make a good website, your visitors spend their time engaging with your content. Our time is valuable so if we spend it, it should also be taken serious. Securing your communications is a token of appreciation to your visitors. (just like not using tracking cookies is, but that is a different subject).
+               <br> <a class="readmore" href="https://www.eff.org/pages/tor-and-https">Read more</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="6" class="window">
+          <div class="content">
+                <h2>"But there is no secret, dangerous content on my website!"</h2>
+                <div class="explanation">In some situations, merely visiting and reading your site might endanger your visitors. Also if you use a CMS like WordPress you are logging in to your own website through a webform. Not using SSL reveals your login credentials to anyone on the line between you and your website meaning your log-in details can be used to manipulate content on your site. 
+                <br><a class="readmore" href="https://www.eff.org/pages/tor-and-https">Read more</a>
+                </div>
+            </div>
+        </section>
+        
+         <section id="7" class="window">
+          <div class="content">
+                <div class="explanation">
+                	<pre>It is difficult to get.</pre>
+Move to a webhoster that will set it up for you. They do it all they time and you just have to ask them.
+
+<pre>It is too expensive.</pre>
+There are ways to do this on the cheap, like making your own certificate. But first you have to ask yourself; how serious do you take the integrity of your own site and the security of your visitors?
+
+<pre>I'm a security professional and there is a problem with your explanation.</pre>
+Do you disagree with the idea of this site in general, or are you determined to find fault with a specific part of it? 
+Ha! But what about Heartbleed what about CA's? They are a horrible mafia!!!!
+
+<pre>My site already has SSL!</pre>
+You get a golden star with a rainbow. Now move on to DNSSEC to unlock the unicorn level
+                </div>
+            </div>
+        </section>
+        
+        <section id="8" class="window">
+          <div class="content">
+                <div class="explanation">
+This website was made in a sprint at <a href="https://greenhost.net/">Greenhost</a> as part of the <a href="http://responsibledata.io/">Responsible Data Forum</a>. <br> 
+All content and code 100% <a href="http://www.wtfpl.net/"><img
+       src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png"
+       width="80" height="15" alt="WTFPL" /></a> 
+                </div>
+            </div>
+        </section>
+
+        <script>
+            $(document).ready(function(){
+
+                var $windows = $('.window');
+
+                $windows.windows({
+                    snapping: true,
+                    snapSpeed: 500,
+                    snapInterval: 1100,
+                    onScroll: function(s){},
+                    onSnapComplete: function($el){},
+                    onWindowEnter: function($el){}
+                });
+
+            });
+        </script>
+
+    </body>
+</html>
