@@ -114,6 +114,8 @@ pre {
     text-align: center;
     font-size: 3.0em;
     margin-top: 100px; }
+    .window .content h2 .myths {
+      margin-top: 0; }
   .window .content .explanation {
     font-family: BrandonText-Regular, Futura, Helvetica, Arial, sans-serif;
     font-size: 1.4em;
