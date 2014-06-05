@@ -112,7 +112,8 @@ pre {
   margin-top: -230px; }
   .window .content h2 {
     text-align: center;
-    font-size: 3.0em; }
+    font-size: 3.0em;
+    margin-top: 100px; }
   .window .content .explanation {
     font-family: BrandonText-Regular, Futura, Helvetica, Arial, sans-serif;
     font-size: 1.4em;
