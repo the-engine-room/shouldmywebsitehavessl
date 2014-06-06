@@ -117,7 +117,11 @@ pre{
         h2{
             text-align:center;
             font-size:3.0em;
+            margin-top: 100px;
         }
+        h2.myths {
+	            margin-top: 0;
+            }
         .explanation{
             font-family:$regular;
             //color:$dark-gray;
